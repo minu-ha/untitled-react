@@ -6,6 +6,7 @@ import Detail from './routes/Detail';
 import { useState } from 'react';
 import data from './component/data/Data';
 import Todo from './routes/Todo';
+import Cart from './routes/Cart';
 
 function App() {
   let [shoes] = useState(data);
@@ -37,6 +38,7 @@ function App() {
             </>
           }
         />
+        <Route path={'/cart'} element={<Cart />} />
       </Routes>
     </div>
   );
